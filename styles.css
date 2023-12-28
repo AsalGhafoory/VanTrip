@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.option {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;   /* Fixed width */
+    height: 40px;   /* Fixed height */
+    transition: all 0.5s ease-in-out;
+}
+
+#yesBtn {
+    background-color: #5cb85c;
+    color: white;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+
+#noBtn {
+    background-color: #e74c3c; /* Changing color for differentiation */
+    color: white;
+    margin-left: 20px; /* Adds a small gap between Yes and No */
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#reminderBtn {
+    background-color: #3498db; /* Example color */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    width: 100%; /* Makes the button span the entire width */
+    transition: all 0.3s ease-in-out;
+}
+
+#reminderBtn:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+ul {
+    text-align: left; /* Aligns the text to the left */
+    list-style-type: disc; /* Uses bullets for the list items */
+    padding-left: 20px; /* Adds a bit of left padding for separation from the edge */
+}
+
+li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+}
+#okBtn {
+    background-color: #3498db;     /* Sets the background color of the button to blue */
+    color: white;               /* Sets the text color to white for better contrast */
+    /* You can also add other styles like padding, margin, border, etc. as needed */
+    width: 240px;               /* Adjust width as needed */
+    padding: 15px 20px;        /* Adjust padding to create space inside the button */
+    font-size: 18px;
+}
